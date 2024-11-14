@@ -35,7 +35,7 @@ class Register extends Component {
 
     setTimeout(() => {
       const { history } = this.props;
-      history.push("/login");
+      history.push("/home");
     }, 2000);
     
   };
@@ -185,7 +185,7 @@ class Register extends Component {
           {showSubmitError && <p className="error-message">*{errorMesg}</p>}
           {successMesg && <p className="success-message">{successMesg}</p>}
           <p className="forgot-password">
-            Already have a Account ? <Link to="/login">Click here</Link>
+            Already have a Account ? <Link to="/">Click here</Link>
           </p>
 
           <div className="submit-button">

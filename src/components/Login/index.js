@@ -36,7 +36,7 @@ class Login extends Component {
     Cookies.set("jwt_token", jwtToken, {
       expires: 30,
     });
-    history.replace("/");
+    history.replace("/home");
   };
 
   onSubmitFailure = (errorMesg) => {
@@ -173,7 +173,7 @@ class Login extends Component {
     const { showSubmitError, errorMesg } = this.state;
     const token = Cookies.get("jwt_token");
     if (token !== undefined) {
-      return <Redirect to="/" />;
+      return <Redirect to="/home" />;
     }
     return (
       <div className="container">
