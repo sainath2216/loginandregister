@@ -35,7 +35,7 @@ class Register extends Component {
 
     setTimeout(() => {
       const { history } = this.props;
-      history.push("/home");
+      history.push("/");
     }, 2000);
     
   };
